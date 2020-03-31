@@ -37,11 +37,11 @@ Number and name of feature:  3- Styling with Flexbox
 
 Estimate of time needed to complete: one hour.
 
-Start time: 7:00pm-7:30pm **Break** 
+Start time: 7:00pm-7:30pm **Break** 10:30pm -11:00pm 
 
-Finish time: 
+Finish time: 11:00pm
 
-Actual time needed to complete: 
+Actual time needed to complete: one hour.
 
 ---------------------------------------------------------------------------------------------------
 
@@ -49,9 +49,9 @@ Number and name of feature:  4- Sort the images
 
 Estimate of time needed to complete: one or two hours.
 
-Start time: 
+Start time: 11:30pm-12:00pm
 
-Finish time: 
+Finish time: I didn't complete the sorting thing.
 
 Actual time needed to complete: 
 

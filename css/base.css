@@ -11,6 +11,13 @@ main {
     height: auto;
 }
 
+#page1div, #page2div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     font-family: 'Vast Shadow', cursive;
     font-size: 50px;

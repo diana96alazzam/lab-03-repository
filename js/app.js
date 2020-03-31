@@ -33,6 +33,10 @@ $(document).ready(function () {
   const readJason1 = () => {
 
     $.ajax('data/page-1.json', { method: 'GET', dataType: 'JSON' }).then(data => {
+
+      data.sort((a,b) => a.horns - b.horns);
+      console.log(data);
+
       data.forEach(newEle => {
         let newAnimal = new Animal(newEle);
         newAnimal.renderP1();

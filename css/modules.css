@@ -1,4 +1,4 @@
-#page1div section img, #page1div section h2, #page1div section p #page2div section img, #page2div section h2, #page2div section p {
+#page1div section img, #page1div section h2, #page1div section p, #page2div section img, #page2div section h2, #page2div section p {
     width: 145px;
     
 }
@@ -11,8 +11,6 @@
     width: 145px;
     height: 250px;
     padding: 20px;
-    float: left;
-    text-align: center;
     margin: 5px;
     background-color: #dddddd;
     box-shadow: rgba(128, 128, 128, 0.493) 2px 2px;
@@ -31,4 +29,21 @@
 p{
     padding-top: 5px;
     font-size: 13px;
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(212, 212, 212);
+    box-shadow: rgba(128, 128, 128, 0.493) 2px 2px;
+
+    font-family: 'Delius', cursive;
+    font-size: 13px;      
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: rgb(143, 158, 101);
+    color: #f5f5f5;
+
 }
