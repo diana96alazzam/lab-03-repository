@@ -12,7 +12,7 @@ Number and name of feature: 1- Pagination
 
 Estimate of time needed to complete: one hour.
 
-Start time: 3:18pm.
+Start time: 3:46pm-4:16pm **break** 4:30pm-5:14 **Break** 6:00pm-7:00pm
 
 Finish time: 
 
@@ -25,11 +25,11 @@ Number and name of feature: 2- Templating
 
 Estimate of time needed to complete: half an hour.
 
-Start time: 
+Start time: 3:22pm.
 
-Finish time: 
+Finish time: 3:44pm.
 
-Actual time needed to complete: 
+Actual time needed to complete: 22 minutes.
 
 ---------------------------------------------------------------------------------------------------
 
