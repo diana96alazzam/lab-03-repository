@@ -1,0 +1,33 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Delius', cursive;
+
+}
+
+main {
+    overflow: auto;
+    width: 780px;
+    margin: 0px auto;
+    height: auto;
+}
+
+h1{
+    font-family: 'Vast Shadow', cursive;
+    font-size: 50px;
+}
+
+select{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(143, 158, 101);
+    color: #f5f5f5;
+    font-family: 'Delius', cursive;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+

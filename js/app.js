@@ -37,9 +37,10 @@ $(document).ready(function () {
         let newAnimal = new Animal(newEle);
         newAnimal.renderP1();
 
-        p1animals.push(newAnimal.keyword);
+        p1animals.push(newAnimal);
         for (let i = 0; i<p1animals.length; i++){
-          $(`section:nth-of-type(${i})`).attr('class', p1animals[i]);
+          $(`section:nth-of-type(${i})`).attr('class', p1animals[i].keyword).attr('id', p1animals[i].title);
+
         }
 
         if (!(keywordsP1.includes(newEle.keyword))) {
@@ -60,9 +61,10 @@ $(document).ready(function () {
         let newAnimalP2 = new Animal(newEle);
         newAnimalP2.renderP2();
 
-        p2animals.push(newAnimalP2.keyword);
+        p2animals.push(newAnimalP2);
+
         for (let i = 0; i<p2animals.length; i++){
-          $(`section:nth-of-type(${i})`).attr('class', p2animals[i]);
+          $(`section:nth-of-type(${i})`).attr('class', p2animals[i].keyword).attr('id', p2animals[i].title);
         }
 
         if (!(keywordsP2.includes(newEle.keyword))) {
@@ -79,8 +81,8 @@ $(document).ready(function () {
   };
 
   $('main button:first-of-type').on('click', function () {
-    $('#page1div').show();
-    $('#page2div').hide();
+    $('#page1div section').show();
+    $('#page2div section').hide();
 
     $('select').find('option').not('option:nth-of-type(1)').remove();
 
@@ -88,26 +90,24 @@ $(document).ready(function () {
       $('select').append($('<option></option>').html(filterEl).attr('id', filterEl).attr('class', 'dropDown'));
     });
 
+    $('select').on('change', function () {
+
+      $('#page1div section').show();
+      $('#page2div section').hide();
+
+      var selectedVal = $(this).find(':selected').val();
+      // alert(selectedVal);
+      $(`#page1div section:not(.${selectedVal})`).hide();
+
+    }
+    );
+
   });
-
-  $('select').on('change', function () {
-
-    $('#page1div').show();
-    $('#page2div').show();
-
-
-    var selectedVal = $(this).find(':selected').val();
-    alert(selectedVal);
-    $(`#page1div section:not(.${selectedVal})`).hide();
-    $(`#page2div section:not(.${selectedVal})`).hide();
-
-  }
-  );
 
 
   $('main button:nth-of-type(2)').on('click', function () {
-    $('#page2div').show();
-    $('#page1div').hide();
+    $('#page2div section').show();
+    $('#page1div section').hide();
 
     $('select').find('option').not('option:nth-of-type(1)').remove();
 
@@ -116,11 +116,36 @@ $(document).ready(function () {
       $('select').append($('<option></option>').html(filterEl).attr('id', filterEl).attr('class', 'dropDown'));
     });
 
+    $('select').on('change', function () {
+
+      $('#page2div section').show();
+      $('#page1div section').hide();
+
+      var selectedVal = $(this).find(':selected').val();
+      // alert(selectedVal);
+      $(`#page2div section:not(.${selectedVal})`).hide();
+
+    }
+    );
+
   });
 
 
-  console.log(keywordsP1);
-  console.log(keywordsP2);
+  $('select').on('change', function () {
+
+    $('#page1div section').show();
+    $('#page2div section').show();
+
+
+    var selectedVal = $(this).find(':selected').val();
+    // alert(selectedVal);
+    $(`#page1div section:not(.${selectedVal})`).hide();
+    $(`#page2div section:not(.${selectedVal})`).hide();
+
+  }
+  );
+
+
   readJason1();
   readJason2();
 });
