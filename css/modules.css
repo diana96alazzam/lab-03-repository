@@ -1,13 +1,13 @@
-#page1div section img, #page1div section h2, #page1div section p, #page2div section img, #page2div section h2, #page2div section p {
+section img, section h2, section p, section p {
     width: 145px;
     
 }
 
-#page1div section img, #page2div section img{
+section img, section img{
     height: 130px;
 }
 
-#page1div section, #page2div section {
+section {
     width: 145px;
     height: 250px;
     padding: 20px;
@@ -17,7 +17,7 @@
 
 }
 
-#page1div section h2, #page2div section h2{
+section h2 {
     font-weight: bold;
     font-size: 17px;
     font-family: 'Delius', cursive;
@@ -45,5 +45,6 @@ button{
 button:hover{
     background-color: rgb(143, 158, 101);
     color: #f5f5f5;
-
 }
+
+

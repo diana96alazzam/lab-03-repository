@@ -9,9 +9,6 @@ main {
     width: 780px;
     margin: 0px auto;
     height: auto;
-}
-
-#page1div, #page2div{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
